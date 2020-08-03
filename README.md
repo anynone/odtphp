@@ -24,7 +24,9 @@ This project was initially started by Julien Pauli, Olivier Booklage, Vincent Br
 composer -vvv require anynone/odtphp
 
 ### 替换模板变量
+```php
 $odf = new Odtphp\Odf("account_1.odt");
 $odf->setVars("message", "test1111");
 
 $odf->saveToDisk('account_1_over.odt');
+```
