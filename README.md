@@ -19,3 +19,12 @@ This project was initially started by Julien Pauli, Olivier Booklage, Vincent Br
 [1]: http://vikasmahajan.wordpress.com/2010/12/09/odtphp-bug-solved/
 [2]: https://web.archive.org/web/20120531095719/http://www.odtphp.com/index.php?i=home
 [3]: https://en.wikipedia.org/wiki/OpenDocument_software#Text_documents_.28.odt.29
+
+### 安装
+composer -vvv require anynone/odtphp
+
+### 替换模板变量
+$odf = new Odtphp\Odf("account_1.odt");
+$odf->setVars("message", "test1111");
+
+$odf->saveToDisk('account_1_over.odt');
